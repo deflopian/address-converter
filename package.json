@@ -6,8 +6,8 @@
   "scripts": {
     "start": "npx tsc && node ./build/tests.js",
     "dev": "npx ts-node ./src/tests.ts",
-    "lint": "eslint -c .eslintrc --ext .js,.ts .",
-    "lint:fix": "eslint -c .eslintrc --ext .js,.ts . --fix"
+    "lint": "eslint -c .eslintrc --ext .js,.ts src",
+    "lint:fix": "eslint -c .eslintrc --ext .js,.ts src --fix"
   },
   "keywords": [],
   "author": "",

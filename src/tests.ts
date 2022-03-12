@@ -126,6 +126,7 @@ const subjects = [
     'отклонено: ваше приглашение нас не интересует',
     'provisoire : уговаривайте нас подольше!',
 ]
+
 console.log('Тестируем ответы')
 console.log('Темы письма:')
 subjects.forEach((subject) => {
@@ -137,6 +138,7 @@ subjects.forEach((subject) => {
         console.error(error)
     }
 })
+
 console.log('Прикреплённые файлы:')
 attachments.forEach((filename) => {
     try {
@@ -150,6 +152,7 @@ attachments.forEach((filename) => {
         console.error(error)
     }
 })
+
 console.log('Письмо без файла, с ответом в теле письма:')
 try {
     const mail = new Mail('hello there', 'We honorably accept your invitation', [])
